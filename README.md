@@ -1,5 +1,5 @@
 # bestlmy
-Just Trust
+Just Trust Yourself.
 # 欢迎来到Lmy的博客
 ## 132
 ### as
