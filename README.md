@@ -1,6 +1,6 @@
 # bestlmy
-There is nothing can stop me!!!
-# 阿<br/>斯顿
+Just Trust
+# 欢迎来到Lmy的博客
 ## 132
 ### as
 [a]
