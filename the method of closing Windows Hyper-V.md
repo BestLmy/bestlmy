@@ -9,7 +9,7 @@ Hyper-V是微软提出的一种系统管理程序虚拟化技术，能够实现�
 # Hyper-V的关闭方法
 ### 1.在打开方法中的第二步选择取消对勾,并确定<br><br>
 ### 2.重启计算机,如果发现仍然提示关闭功能,则执行第三步<br><br>
-### 3.利用win+R快捷键打开运行框,输入regedit打开注册表编辑。
-### 4.在注册表中找到：` HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity `
+### 3.利用win+R快捷键打开运行框,输入regedit打开注册表编辑。<br><br>
+### 4.在注册表中找到：<br>` HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity `
 <br>
-然后将Enabled改成0，修改完成后重启电脑即可.
+### 然后将Enabled改成0，修改完成后重启电脑即可.<br>
