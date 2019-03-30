@@ -12,4 +12,4 @@ Hyper-V是微软提出的一种系统管理程序虚拟化技术，能够实现�
 ### 3.利用win+R快捷键打开运行框,输入regedit打开注册表编辑。<br><br>
 ### 4.在注册表中找到：<br>` HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity `
 <br>
-### 然后将Enabled改成0，修改完成后重启电脑即可.<br>
+### 然后将Enabled改成0，修改完成后重启电脑即可
