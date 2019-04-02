@@ -69,3 +69,27 @@ mix[x:y]	#x和y参数可以省略  如果x y都省略,则表示列出列表中�
 ```
 ## 列表的对比
 列表可以直接进行比较,当列表中的元素较多时,比较两个列表的首元素大小,如果两个元素首元素相同,再比较次元素的大小,以此类推
+## 列表中元素的处理
+
+1.count()函数
+```Python
+mix.count(x)  #求x在列表mix中出现的次数 
+```
+2.index()函数
+```Python
+mix.index(x)  #求x在列表mix中第一次出现的位置
+mix.index(x,y,z)	#求x在列表mix中 y到z区间第一次出现的位置 其中z 可以省略
+```
+3.reverse()函数
+```Python
+mix.reverse() 	#使mix列表原地反转,第一个变成倒数第一 ,倒数第一变成第一
+```
+4.sort()函数
+```Python
+mix.sort() 	使mix列表的元素从小到大排列
+mix.sort(reverse = True )  	使元素从大到小排列
+```
+5.拷贝
+```Python
+mix1 =mix[:] 	#若采用分片方法,mix1不会跟着mix改变而改变  即mix1另外重新分配了内存地址
+mix1=mix   	#这种方法导致mix1 会跟着mix改变而改变   即mix和mix1 都指向同一内存地址
