@@ -9,5 +9,5 @@ tcpdump -i eth0 port 22
 
 ### 读取抓包文件
 ```
-tcpdump -r file.pcap  -r read
+tcpdump -（A/X）r file.pcap  #r= read A =二进制 X=十六进制
 ```
