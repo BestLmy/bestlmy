@@ -35,3 +35,16 @@
 按外形     : 机架式  刀片式 塔式  机柜式
 按用途    ： 通用服务器（多功能）  功能服务器 
 ```
+
+## 常见服务器软件
+服务器软件工作在客户端-服务端（C/S）或浏览器-服务器（B/S）的方式，有很多形式服务器 包括
+```
+文件服务器（File Server）
+数据库服务器(Database Server)
+邮件服务器(Mail Server)
+网页服务器(Web Server)
+FTP服务器(FTP Server)
+域名服务器(DNS Server)
+时间同步服务器(NTP Server)
+代理服务器(Proxy server)
+```
