@@ -1,0 +1,171 @@
+<!DOCTYPE html> <!-- 表面符合html标准 -->
+<html lang="en">
+
+    <head>
+        <style>
+            span{
+                color: red;
+                font-weight:bold;
+            }
+            p span{color:green;}  /*嵌套标签，表示只有p标签内部的span 标签才会调用此属性*/
+            p{ /*选择器名称*/
+                text-align: left;
+                font-size: 16px;    /*字体大小*/
+                color: blue;        /*蓝色*/
+            }
+            /* 超链接样式 */
+            a:link{
+                text-decoration: none;
+                color: blue;
+            }
+            a:visited{
+                text-decoration: none;
+                color: purple;
+            }
+            a:hover{
+                font-size: 120%;  
+                /* 悬停放大 */
+                text-decoration: underline;
+                color: blue;
+            }
+            a:active{
+                text-decoration: none;
+                color: aqua;
+            }
+            /* 边框样式 */
+            table{
+                width: 300px;
+                height: 200px;
+                border-collapse:collapse; 
+                /* 如果可能表格边框会合并为一个边框 */
+            }
+            th{
+                color:white;
+                text-align: left;
+                background-color: rgb(188, 247, 79);
+            }
+            table,td,th{
+                border:3px solid yellowgreen;
+            }
+            /* 奇偶选择器   ：nth-child(odd奇|even偶) */
+            tr:nth-child(even){
+                background-color:rgba(115, 207, 177, 0.342);
+            }
+            h1{
+                height: 1em;
+                line-height: 1em;/*行高 可以使用em 或者%单位*/
+                /*当height和line—height相同是表示垂直居中*/
+                text-indent: 2em;
+                letter-spacing: 3px;/*字符间距*/
+                text-decoration: overline;/*装饰线underline/line-through*/
+            }
+            td{/*集体声明标签*/
+                text-align: left;
+                font-size: large;
+                color: pink;
+            }
+            .one{font-size: 12px;}/*类别选择器,所有的one类都是12号字体，无论是p标签还是h1或者其他标签*/
+            .two{font-size:8px;}
+            .center{text-align: center}
+            .bold{font-weight: bolder}
+            #id1{font-size: 22px;}/*id选择器*/
+
+        </style>
+        <meta charset="UTF-8">  <!-- meta设置元属性 比如说字符集 -->
+        <title>傻逼lcq</title>
+    </head>
+    <body>
+        
+        <div id="11" align="center">
+        <p>测试换行</br><!-- br换行标签 -->
+            123
+        </p><!-- p段落标签 -->
+            <p class="one center">测试<span>类别</span>选择器1</p>
+            <p class="two bold">测试<span>类别</span>选择器2</p> <!--多class类的引用 使用空格隔开-->
+            <p id="id1">测试<span>id</span>选择器1</p>  <!--每个id只能用一次-->
+        <pre>
+            <span>hahaha</span><!-- 行内分组进行修改 -->nihao  aaa
+            <hr><!-- hr标签 添加分隔线 -->
+            123 
+        </pre>
+            <!--如果src链接的图像不能用，则用alt中的文字代替图像-->
+        <a href="https://www.baidu.com"><img src="https://dss0.bdstatic.com/k4oZeXSm1A5BphGlnYG/icon/weather/aladdin/png_18/a0_night.png" alt="网络图片"></a>  <!-- a超链接标签 超链接到其他url时候一定要有https或者其他协议 否则会跳转到本地-->
+        <p style="text-align: justify-all;"><a href="">未知超链接</a><br></p>img
+    </div>
+    <div align="left">
+        <h1 style="font-size: 2em">lcq沙雕</h1><!--根据系统的字体大小进行相应的缩放-->
+        <h1 class="one" style="font-size: 450%">是吗</h1>   <!--百分比不会随着页面的缩放而进行调整-->
+        <ul>
+            <li style="font:italic bold 16px/1.5em '宋体'">lcq无序列表1</li>
+            <!-- font属性简化写法 -->
+            <li>lcq无序列表2</li>
+        </ul>
+        <ol>
+            <li>lcq有序列表1</li>
+            <li>lcq有序列表2</li>
+            <li></li>
+        </ol>
+    </div>
+    <div align="right">
+        <table >
+            <tr>
+                <th>lcq之父</th>  <!--table header加粗-->
+                <th>lcq之爹</th>
+                <th>lcq之爷</th>
+            </tr>
+            <tr>
+                <td>李梦洋</td><!--table date 不加粗-->
+                <td>李梦洋</td>
+                <td>李梦洋</td>
+            </tr>
+            <tr>
+                <td>李梦洋1</td><!--table date 不加粗-->
+                <td>李梦洋1</td>
+                <td>李梦洋1 </td>
+            </tr>
+        </table>
+    </div>    
+    <div id="form" align="center">
+        <form action="">
+            lcq账户:<input type="text" value="请输入账号密码" name="username"> <!--通过name属性提交到后端-->
+            <br>
+            lcq密码:<input type="password" name="password">
+            <br>
+            lcq性别：
+            男<input type="radio" value="boy" name="single" checked="checked">
+            lcq性<input type="radio" value="girl" name="single" >
+            <br>
+            lcq爱好:
+            lcq1 <input type="checkbox" value="lcq1" name="multiple" >
+            lcq2 <input type="checkbox" value="lcq2" name="multiple" >
+            lcq3 <input type="checkbox" value="lcq3" name="multiple" >      
+            <br>
+            lcq丑不丑:<select name="null" id="">
+                <option selected="selected">lcq丑1</option>
+                <option >lcq丑2</option>
+            </select>
+            <br>
+            <textarea name="lcqtextarea" id="null1" cols="10" rows="10">lcq文本框</textarea>
+            <br>
+            <input type="submit" value="提交" name="submitBtn">
+            <input type="reset" value="重置" name="resetBtn">
+        </form>
+        <p></p>
+
+    </div>
+    <div>
+        <p><em>lcq语义化斜体</em><br><i>lcq无语义化斜体</i><br><strong>lcq语义化加粗</strong><br><b>lcq无语义加粗</b></p>
+    </div>
+    <div>
+        <dl>
+            <dt>
+                LCQ term
+            </dt>
+            <dd>LCQ descript</dd>
+        </dl>
+    </div>
+        <p style="text-align: justify;text-indent: 2em;color: gray;">Lorem ipsum dolor sit <span style="text-decoration: line-through">Lmy</span>amet, consectetur adipisicing elit. Deleniti facere fuga illum ipsum molestias omnis quam ratione rem? Accusantium, architecto assumenda consequatur dicta distinctio dolorum in nesciunt qui tempore vero. Ab accusamus adipisci aliquid animi autem ipsa magni obcaecati placeat, quae quaerat, quo sapiente temporibus? A ab animi atque commodi cum cupiditate dolorum ducimus et facere, impedit iste, minus modi nemo nihil nobis placeat quas qui quisquam recusandae sed, sequi temporibus ullam unde. A, amet dolor molestias optio quas totam.</p>
+</body>
+</html>
+<!-- 是不是ctrl+/快速注释 --> 
+<!-- Lorem ipsum dolor sit. -->
