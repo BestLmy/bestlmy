@@ -2,5 +2,4 @@
 
 
 
-### [第三周作业](./Week3)
-### [Kali学习过程](https://github.com/BestLmy/lmy/tree/master/kali)
+### [第三周作业(利用RecyclerView完成TODO事件的处理)](./Week3)
