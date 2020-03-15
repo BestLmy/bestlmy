@@ -1,4 +1,4 @@
-# Welcome to my blog/
+# Welcome to my blog
 
 
 ### [Kali学习过程](./kali)
