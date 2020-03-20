@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<table id="tab" style="border: 1px solid">
+    <tr>
+        <td>用户名</td>
+        <td>密码</td>
+    </tr>
+</table>
+用户名：<input id="username" type="text"><br>
+密  码：<input type="password" id="pwd"><br>
+<input type="button" id="btn" value="check" >
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            var username=$("#username").val();
+            var pwd=$("#pwd").val();
+            if(username=="") {
+                alert("请输入用户名");
+                $("#username").focus();
+                return false;
+            }
+            if(pwd==""){
+                alert("请输入密码");
+                $("#pwd").focus();
+                return false;
+            }
+            $.ajax({
+                url:"check.php",
+                data:{"user":username,"pwd":pwd},
+                type:"post",
+                beforeSend:function(){
+                    $("#btn").val("checking");
+                    $("#btn").attr("disabled","disabled");
+                },
+                success:function (data) {
+                    if(data==1) {
+                        html = "<tr><td>" + username + "</td><td>" + pwd + "</td></tr>"
+                        $("#tab").append(html);
+                    }
+                    else alert("用户名错误");
+                    $("#btn").val("check");
+                    $("#btn").removeAttr("disabled");
+                },
+            })
+        })
+   });
+</script>
+</body>
+</html>

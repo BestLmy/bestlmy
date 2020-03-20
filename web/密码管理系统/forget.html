@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- 李梦洋刘超群密码管理系统密码找回页-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Passwd Managementer</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <style>
+        body{
+            background: url(img/background.jpg)center center / cover no-repeat fixed;;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            margin: auto;
+            width: 300px;
+            color:#fff;
+            text-align: center;
+            word-break: break-all;
+            z-index: 10;
+            position: absolute;
+            left: 45%;
+            overflow: hidden; 
+        }
+        
+        .box input{
+            background-color: transparent;
+            border:chocolate;
+            outline: none;
+            background-image: url(img/btn.png);
+            padding-left: 10px;
+            line-height: 50px;
+        }
+        .logo img{
+            margin-top: 80px;
+            margin-bottom: 50px;
+            align-self: auto;
+            width:  200px;
+            height: 200px;
+            text-align: center;
+        }
+        .box:before {
+            content: '';
+            background: url(img/background.jpg) center center / cover no-repeat fixed;
+            filter: blur(20px);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            margin: -30px; 
+        }
+        .submit{
+            width:90px;
+            height:46px;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- 123-->
+        <div style="text-align: center;" class="logo">
+            <img src="img/xh.png"/>
+            <p style="color:#fed74e;font-size:60px;font-family: '宋体';">找回密码</p>
+        </div>
+        <div class="box">
+            <form action="forget.php" method="POST">
+                <p>账号<input type="text" name="account1"/></p>
+                <p>手机号<input type="text" name="phone"/></p>
+                <p>新密码<input type="password" name="pwd0"/></p>
+                <p>确认密码<input type="password" name="pwd1"/></p>
+                <input class="submit" style="cursor:pointer;font-size: 20px;color: #fff;background-image: url(img/btn2.png);" type="submit" value="找回密码" />
+            </form>
+        </div>
+    </body>
+    <footer>
+        <p style="color: green;">© Lmy Lcq  ECJTU 2019-12-29</p>
+    </footer>
+</html>
