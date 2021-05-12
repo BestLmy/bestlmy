@@ -1,1 +1,25 @@
-<mxfile host="app.diagrams.net" modified="2021-05-12T08:23:50.445Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" etag="n8zcUX21KYVrfB-rvjFj" version="14.6.12" type="github"><diagram id="0HAefAD60LhWe8abuBd0" name="Page-1">jZLBboMwDIafJsdKQNayHre2azVph43DjlNEPBIpEJSaAXv6heEUEJq0U+zPju38DuOHsjs7UasXK8GwJJId40eWJPFdsvPHQPqRpPt0BIXTkpImkOlvIBgRbbSE6yIRrTWo6yXMbVVBjgsmnLPtMu3TmmXXWhSwAlkuzJq+a4lqpPfbaOIX0IUKneOIIqUIyQSuSkjbzhA/MX5w1uJold0BzCBe0GW89/RH9DaYgwr/c2HzLEx33Io3jq8PH3mmYH/ZUJUvYRp6MA2LfVDA2aaSMBSJGH9slUbIapEP0dbv3DOFpfFe7M31UKEDOIRuhmjIM9gS0PU+haI8JcH68BPIbyf94yCqmmm/IyZo5cWt9KSKN0iY4E4L+I3NvjE//QA=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-05-12T08:25:23.871Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15" etag="-QaGfaONR4Qspz5KflY6" version="14.6.12" type="github">
+  <diagram id="0HAefAD60LhWe8abuBd0" name="Page-1">
+    <mxGraphModel dx="1426" dy="797" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WjgiqSVxhLH3iMliLRJI-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-JalxD5aR3tQA_cShe9H-1" target="WjgiqSVxhLH3iMliLRJI-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JalxD5aR3tQA_cShe9H-1" value="名片全能王APP" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="370" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WjgiqSVxhLH3iMliLRJI-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WjgiqSVxhLH3iMliLRJI-1" target="WjgiqSVxhLH3iMliLRJI-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WjgiqSVxhLH3iMliLRJI-1" value="主界面" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WjgiqSVxhLH3iMliLRJI-4" value="选取图片" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
